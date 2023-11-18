@@ -1,0 +1,162 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+#root {
+  text-align: center;
+ 
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.read-the-docs {
+  color: #888;
+}
+
+.my-form{
+  margin-inline: auto;
+}
+
+
+
+form{
+  padding-top: 10%;
+  width: 90vw;
+  height: 60vh;
+  margin-left: 5%;
+  /* margin-inline: auto; */
+  box-shadow: 0px 0px 10px rgb(122, 121, 121);
+  background: rgb(215,223,233);
+  background: linear-gradient(90deg, rgba(215,223,233,1) 35%, rgba(246,241,248,1) 100%);
+}
+
+label{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+input{
+  margin-top: 2%;
+  border-radius: 14px;
+  height: 6vh;
+  width: 50vw;
+  padding-left: 1%;
+  border: 1.5px solid rgb(116, 140, 140);
+  outline: none;
+}
+
+.click-me{
+  width: 18vw;
+  height: 7vh;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  margin-top: 1%;
+  padding: 0px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+.header{
+  font-size: 10px;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightsteelblue;
+  color: white;
+  border-bottom: 3px solid rgb(165, 165, 201);/
+}
+
+.card-container{
+  width: 98vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top:80px;
+
+
+  /* flex-direction: column; */
+  
+}
+
+.my-card{
+  margin: 1%;
+  width: 200px;
+  height: 180px;
+  font-size: 14px;
+  background-color: rgb(215, 198, 231);
+  border-radius: 10px;
+}
+
+.my-card>h4{
+  text-align: left;
+  padding: 10px;
+}
+
+.loader-container{
+  margin-inline: auto;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.loader{
+  border: 5px solid rgb(243, 243, 243);
+  border-top: 5px solid grey;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: himanshu 1.5s linear infinite;
+}
+
+@keyframes himanshu {
+
+  0%{
+    transform: (0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
